@@ -1,0 +1,32 @@
+<aside class="animated zoomIn">
+  <h2>Poll: Are you Excited about Angular Elements?</h2>
+
+  <hr>
+
+  <div *ngIf="!hasVoted" class="animated bounceInUp">
+      <button class="green" (click)="vote('yes')">Yes! :)</button>
+      <button class="red" (click)="vote('no')">No :(</button>
+  </div>
+
+
+  <div *ngIf="hasVoted" class="results animated rotateInUpLeft" >
+        <h4><span class="badge bg-green">Yes</span> {{ yes }} votes | {{ yesPercent | number }}%</h4>
+
+
+        <h4><span class="badge bg-red">No</span> {{ no }} votes  | {{ noPercent | number }}%</h4>
+
+
+        <div class="progress progress-stacked progress-striped progress-animate progress-large">
+                <span [ngStyle]="{'width.%': yesPercent }" class="bg-green"></span>
+                <span [ngStyle]="{'width.%': noPercent }" class="bg-red"></span>
+              </div>
+    </div>
+
+    <hr>
+  
+    <div class="about">Created by Jeff Delaney<br> Powered by Angular Elements + Firebase</div>
+</aside>
+
+
+
+

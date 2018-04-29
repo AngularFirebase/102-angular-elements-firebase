@@ -1,0 +1,246 @@
+
+.results {
+    text-align: left;
+}
+
+hr {
+    border: 1px solid rgb(216, 216, 216);
+}
+
+aside {
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    font-family: 'Courier', monospace;
+    border: 1px solid rgb(216, 216, 216);
+    text-align: center;
+    color: #303030;
+}
+
+button {
+    margin: 5px;
+    border: 1px rgb(158, 158, 158) dashed;
+    font-size: 1.3em;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.red {background-color: #f44336;}
+.green {background-color: #4CAF50;}
+
+
+@keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      transform: translate3d(0, 3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, 10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, -5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounceInUp {
+    animation-name: bounceInUp;
+  }
+
+  @keyframes rotateInUpLeft {
+    from {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform-origin: left bottom;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .rotateInUpLeft {
+    animation-name: rotateInUpLeft;
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn;
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+
+  .label,
+  .badge {
+    background-color: #b5b5b5;
+    color: #fff;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 2;
+    font-weight: bold;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .label {
+    border-radius: 4px;
+    display: inline;
+  }
+  
+  .badge {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1px 7px;
+  }
+  
+  .label[href]:hover, .label[href]:focus {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  a.badge:hover, a.badge:focus {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .label a,
+  .badge a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .label:empty,
+  .badge:empty {
+    display: none;
+  }
+
+
+  .progress {
+    background-color: #f9f9f9;
+    color: #fff;
+    box-shadow: inset 0 1px 1px rgba(100, 100, 100, 0.1);
+    box-sizing: initial;
+    color: #fff;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    height: 12px;
+    line-height: 1.182;
+    margin: 6px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .progress-small {
+    font-size: 9px;
+    font-size: 0.5625rem;
+    height: 6px;
+    line-height: 0.875;
+  }
+  
+  .progress-large {
+    font-size: 16px;
+    font-size: 1rem;
+    height: 25px;
+    line-height: 1.7;
+  }
+  
+  .progress > span {
+    background-color: #2bc253;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  .progress.progress-stacked > span {
+    display: inline-block;
+    float: left;
+  }
+  
+  .progress-striped > span:after, .progress-striped > span > span {
+    background-size: 50px 50px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .progress-striped.progress-animate > span:after, .progress-striped.progress-animate > span > span {
+    -webkit-animation: move 2s linear infinite;
+            animation: move 2s linear infinite;
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+
+  .bg-red {
+    background-color: #d9534f !important;
+  }
+
+  .bg-green {
+    background-color: #5cb85c  !important;
+  }
+
+  .about {
+      font-size: 0.85em;
+      color: #838383;
+  }
