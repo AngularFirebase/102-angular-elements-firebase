@@ -23,4 +23,4 @@ You can use your custom Angular Elements component in any HTML page like so...
 <script src="../elements/user-poll.js"></script>
 ```
 
-Or simply open `{local-path-to}/demo/index.html` on your browser. 
+Or simply open `{local-path-to}/demo/index.html` in your browser. 

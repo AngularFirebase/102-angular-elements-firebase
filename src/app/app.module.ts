@@ -23,7 +23,6 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
     AngularFireModule.initializeApp(config),
     AngularFirestoreModule
   ],
@@ -34,11 +33,11 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
   bootstrap: []
 })
 export class AppModule { 
-  constructor(private injector: Injector) {
-    const el = createCustomElement(UserPollComponent, { injector });
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap() {
+    const el = createCustomElement(UserPollComponent, { injector: this.injector });
     
     customElements.define('user-poll', el);
-  }
-
-  ngDoBootstrap() { }
+   }
 }
