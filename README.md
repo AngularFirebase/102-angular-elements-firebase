@@ -14,6 +14,13 @@ Watch the [screencast](https://angularfirebase.com/lessons)
 This will create the custom component `elements/user-poll.js`.
 
 
+## Firebase / Firestore Configuration
+
+In app.module.ts, you must update the value of ```const config``` to reflect your own [firebase project id](https://console.firebase.google.com/u/0/).
+
+You'll then need to create a firestore database in this ```firebase project id``` with one collection named ```polls``` and containing a single document called ```elements```. The document must have two fields ```yes``` and ```no```of type ```number``` for the votes to be registered and retrieved from the custom elements.
+
+
 ## Usage
 
 You can use your custom Angular Elements component in any HTML page like so...
@@ -24,3 +31,4 @@ You can use your custom Angular Elements component in any HTML page like so...
 ```
 
 Or simply open `{local-path-to}/demo/index.html` in your browser. 
+
